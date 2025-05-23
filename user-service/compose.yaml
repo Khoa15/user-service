@@ -1,0 +1,9 @@
+services:
+  database:
+    image: 'postgres:17.5-alpine3.21'
+    ports:
+      - '5432'
+    environment:
+      - 'POSTGRES_DB=mydatabase'
+      - 'POSTGRES_USER=myuser'
+      - 'POSTGRES_PASSWORD=secret'
